@@ -1,0 +1,54 @@
+html {
+  font-size: 10px;
+  height: 100%;
+  font-family: "IBM Plex Sans", sans-serif, "Arial";
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IBM Plex Sans", sans-serif, "Arial";
+  color: @h1;
+}
+
+a {
+  color: @link;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+
+/*страница Поиска*/
+
+.gs-webResult.gs-result a.gs-title:link,
+.gs-webResult.gs-result a.gs-title:link b,
+.gs-imageResult a.gs-title:link,
+.gs-imageResult a.gs-title:link b,
+.gs-result .gs-title,
+.gcsc-find-more-on-google,
+.gcsc-find-more-on-google-magnifier,
+.gcsc-find-more-on-google-magnifie {
+  color: @circle !important;
+  text-decoration: none;
+  fill: @btn !important;
+}
+
+@media screen and (max-width: 768px) {
+  .body {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}
